@@ -34,18 +34,7 @@
 }
 
 .dive-video {
-  padding-left: 25rem;
-}
-
-.nav-button {
-  background-color: #008CBA;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.nav-button:hover {
-background-color: #005f5f;
+  width: 900px;
+  height: 600px;
+  
 }
