@@ -1,0 +1,39 @@
+.btn.go-back {
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+}
+
+.btn.login {
+    text-align: center;
+    border: none;
+    padding: 0.5rem 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    background: #686868;
+    border: solid 0.15rem rgb(89 89 89);
+    padding: 0.5rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    color: white;
+
+    &:hover {
+        border: solid 0.15rem #0f6fdd;
+    }
+
+    &:focus {
+        border: solid 0.15rem #0f6fdd;
+        outline: none;
+    }
+
+    &::placeholder {
+        color:    rgb(68, 68, 68);
+     }
+}

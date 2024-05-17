@@ -1,50 +1,6 @@
 /* This is out index web's stylesheet (index.css), here u will have a little 
 explanation about what we're doing in our code for each style tag */
 
-/*For aligning items to the center by displaying it as a Flex */
-.align-center {
-  display: flex;
-  justify-content: center;
-}
-
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #303030da;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    border-radius: 0.3rem;
-    width: 23.4%;
-    max-width: 26.1%;
-  }
-  
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: white;
-  font-family: Ubuntu;
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-  
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #0f6fdd;
-}
-  
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #0f6fdd;
-  font-family: Ubuntu Bold;
-}
-  
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
 /* To enforce a suitable image height and width for our video on the slider  */
 .dive-video {
   width: 900px;

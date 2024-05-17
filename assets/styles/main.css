@@ -1,3 +1,67 @@
 body {
     font-family: Ubuntu;
-}  
+}
+
+/*For aligning items to the center by displaying it as a Flex */
+.align-center {
+    display: flex;
+    justify-content: center;
+}
+  
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #303030da;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    max-width: 26.1%;
+}
+    
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    font-family: Ubuntu;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+    
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #0f6fdd;
+}
+    
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #0f6fdd;
+    font-family: Ubuntu Bold;
+}
+    
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.btn {
+    background: #303030da;
+    border-radius: 0.3rem;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem;
+    font-family: Ubuntu;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #0f6fdd;
+}
+
+.psb-1 {
+    padding: 0 0 1rem;
+}
