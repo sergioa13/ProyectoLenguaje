@@ -2,7 +2,6 @@ figure {
     margin:0;
 }
 #gallery {
-    margin-left: 25%;
     max-width: 900px;
     margin: auto;
     overflow: hidden;
