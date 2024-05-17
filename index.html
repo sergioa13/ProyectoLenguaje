@@ -5,17 +5,19 @@
         <title>Federación de Baloncesto Serracines</title>
         <link rel="stylesheet" href="assets/styles/index.css">
         <link rel="stylesheet" href="assets/styles/slider.css">
+        <link rel="stylesheet" href="assets/styles/webfonts.css"
+        <link rel="stylesheet" href="assets/styles/main.css">
     </head>
     <body>
-        <div>
+        <div class="align-center">
             <div class="topnav">
                 <a class="active" href="#">Incio</a>
-                <a href="web/Login.html">Login</a>
                 <a href="web/datos.html">Clasificación</a>    
-                <a href="web/datos.html">Resultados</a>        
+                <a href="web/datos.html">Resultados</a>
+                <a href="web/Login.html">Inicio Sesión</a> 
             </div>
         </div>
-        <section id="gallery">
+        <section class="align-center" id="gallery">
             <div class="gallery-container">
                 <figure class="gallery-item">
                     <iframe class="dive-video" src="https://www.youtube.com/embed/ikwfCzny0w4?si=SQECpV4mSu_jnPs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -33,48 +35,6 @@
             </nav>
         </section>
     </body>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/buttons.js"></script>
 </html>
-<script>
-    let currentIndex = 0;
-
-    document.querySelector('.prev-button').addEventListener('click', () => {
-        navigate(-1);
-    });
-    
-    document.querySelector('.next-button').addEventListener('click', () => {
-        navigate(1);
-    });
-    
-    function navigate(direction) {
-        const galleryContainer = document.querySelector('.gallery-container');
-        const totalImages = document.querySelectorAll('.gallery-item').length;
-        
-        currentIndex = (currentIndex + direction + totalImages) % totalImages;
-        const offset = -currentIndex * 100;
-        
-        galleryContainer.style.transform = `translateX(${offset}%)`;
-    }
-</script>
-<script>
-    //AUTOPLAY
-    let autoplayInterval = null;
-    
-    function startAutoplay(interval) {
-        stopAutoplay();  // Detiene cualquier autoplay anterior para evitar múltiples intervalos.
-        autoplayInterval = setInterval(() => {
-            navigate(1);  // Navega a la siguiente imagen cada intervalo de tiempo.
-        }, interval);
-    }
-    
-    function stopAutoplay() {
-        clearInterval(autoplayInterval);
-    }
-    
-    // Iniciar autoplay con un intervalo de 3 segundos.
-    startAutoplay(3000);
-    
-    // Opcional: Detener autoplay cuando el usuario interactúa con los botones de navegación.
-    document.querySelectorAll('.nav-button').forEach(button => {
-        button.addEventListener('click', stopAutoplay);
-    });
-</script>

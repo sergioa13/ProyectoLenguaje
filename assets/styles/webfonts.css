@@ -1,0 +1,31 @@
+/* All the fonts we'll be using for this web project */
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../webfonts/Ubuntu.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Ubuntu Bold";
+    src: url(../webfonts/Ubuntu-b.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Ubuntu Compressed";
+    src: url(../webfonts/Ubuntu-C.ttf) format("truetype");
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: "Ubuntu Italics";
+    src: url(../webfonts/Ubuntu-i.ttf) format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Ubuntu Italics Bold";
+    src: url(../webfonts/Ubuntu-ib.ttf) format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}

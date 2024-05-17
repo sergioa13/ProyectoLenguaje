@@ -1,31 +1,43 @@
+/* This is our slider's stylesheet */
+
 figure {
     margin:0;
 }
+
+
+/* Add a max width for the images/videos, we make the margin auto,
+we hide the overflow so, the scroll bar will not show and we add a position relative
+so we can continue working with other things */
 #gallery {
     max-width: 900px;
     margin: auto;
     overflow: hidden;
-    position: absolute;
-    margin-left: 25%;
+    position: relative;
 }
-  
+
+/* We make the "main" slider container, wich will contain the animation of the landslides
+and also will display the container as a flex for organize the elements on a single row*/  
 .gallery-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-  
+
+/* We set a minimum width (min-width) for .gallery-item to ensure that each slider element occupies the full available width,
+and use box-sizing: border-box; to include the padding and border in the element width */
 .gallery-item {
     min-width: 100%;
     box-sizing: border-box;
 }
-  
+/* We ensure that images are responsive and fit the width of the container using width: 100%. */
 .gallery-item img {
     width: 100%;
     height: 100%;
     display: block;
 }
   
-  /* Navegación de la galería */
+/* For navigation, we use display: flex; and justify-content: space-between; in .gallery-navigation 
+to position the buttons at opposite ends of the container, and we adjust the position and style 
+of the buttons with additional CSS */
 .gallery-navigation {
     display: flex;
     justify-content: space-between;
@@ -48,5 +60,5 @@ figure {
     font-size: 30px;
 }
 .nav-button:hover {
-    background-color: #005f5f;
+    background-color: #0f6fdd;
 }
