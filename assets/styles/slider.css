@@ -6,6 +6,7 @@ figure {
     margin: auto;
     overflow: hidden;
     position: absolute;
+    margin-left: 25%;
 }
   
 .gallery-container {
