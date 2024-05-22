@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const usuario = document.getElementById('usuario').value;
         const contraseña = document.getElementById('contraseña').value;
         
-        // Validar los datos (puedes agregar más validaciones según tus necesidades)
+        // Validar los datos
         if(usuario === '' || contraseña === '') {
             alert('Todos los campos son obligatorios.');
             return;
