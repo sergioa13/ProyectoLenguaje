@@ -28,15 +28,15 @@
                 <div class="psb-1">
                     <input type="password" id="contraseña" placeholder="Contraseña">
                 </div>
-                <button onclick="mostrarAlertaPersonalizada('¡Hola, este es un mensaje personalizado!')" class="btn login" type="submit">Iniciar Sesion</button>
+                <button class="btn login" type="submit">Iniciar Sesion</button>
             </form>
         </div>
         <!-- Alertas -->
-        <div id="miModal" class="modal">
+        <div id="modal" class="modal">
             <div class="modal-contenido">
-                <span class="cerrar" onclick="cerrarModal()">&times;</span>
-                <h2 id="modalTitulo">ERROR</h2>
-                <p id="modalMensaje"></p>
+                <h2 id="tituloModal">ERROR</h2>
+                <p id="comentarioModal"></p>
+                <button onclick="cerrarModal()" class="btn -modal">Entendido</button>
             </div>
         </div>
     </body>
