@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             alert('Todos los campos son obligatorios.');
             return;
         }else if(usuario === 'admin' && contraseña === 'root'){
-            
+            window.location.href = '/datos.html';
+            return;
         }else if(usuario  !== 'admin' || contraseña !== 'root'){
             alert('El usuario o contraseña no concuerdan.');
             return;
