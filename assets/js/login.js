@@ -1,3 +1,14 @@
+// Función para mostrar la alerta personalizada
+function mostrarAlertaPersonalizada(mensaje) {
+    document.getElementById('modalMensaje').textContent = mensaje;
+    document.getElementById('miModal').style.display = 'block';
+}
+
+// Función para cerrar la alerta personalizada
+function cerrarModal() {
+    document.getElementById('miModal').style.display = 'none';
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const formulario = document.getElementById('Login');
     
@@ -10,13 +21,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         
         // Validar los datos
         if(usuario === '' || contraseña === '') {
-            alert('Todos los campos son obligatorios.');
+            mostrarAlertaPersonalizada('Los campos no han sido rellenados.')
+            console.log('Fallido: Uno o mas campos no han sido rellenados.');
             return;
         }else if(usuario === 'admin' && contraseña === 'root'){
             window.location.href = '../web/datos.html';
+            console.log('Exito.', username);
             return;
         }else if(usuario  !== 'admin' || contraseña !== 'root'){
-            alert('El usuario o contraseña no concuerdan.');
+            mostrarAlertaPersonalizada('El usuario o contraseña no es correcto.')
+            console.log('Fallido: El usuario o contraseña no es correcto.');
             return;
         }
 

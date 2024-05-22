@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../assets/styles/webfonts.css">
         <script src="https://kit.fontawesome.com/d7afd0abb8.js" crossorigin="anonymous"></script>
         <script src="../assets/js/login.js"></script>
+        <script src="../assets/js/alert.js"></script>
     </head>
     <body>
         <a class="btn go-back" href="../index.html">
@@ -27,9 +28,16 @@
                 <div class="psb-1">
                     <input type="password" id="contraseña" placeholder="Contraseña">
                 </div>
-                <button class="btn login" type="submit">Iniciar Sesion</button>
+                <button onclick="mostrarAlertaPersonalizada('¡Hola, este es un mensaje personalizado!')" class="btn login" type="submit">Iniciar Sesion</button>
             </form>
-            
+        </div>
+        <!-- Alertas -->
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <h2 id="modalTitulo">ERROR</h2>
+                <p id="modalMensaje"></p>
+            </div>
         </div>
     </body>
 </html>
