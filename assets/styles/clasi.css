@@ -1,0 +1,47 @@
+/* General styling for classification and player stats sections */
+.classification, .player-stats {
+    margin-top: 2rem;
+}
+
+.classification h2, .player-stats h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Styling for all tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    border-radius: 8px; /* Añadido para bordes redondeados */
+    overflow: hidden; /* Añadido para evitar desbordamiento */
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Specific styling for player stats tables */
+.team-stats-container {
+    text-align: center; /* Centra los elementos horizontalmente */
+}
+
+.team-stats {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 1rem auto; /* Centra horizontalmente */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Cambiado de flex a inline-block */
+    width: calc(25% - 2rem); /* Hasta 4 por fila */
+    box-sizing: border-box;
+    vertical-align: top; /* Alinea las tablas en la parte superior */
+}

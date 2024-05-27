@@ -1,0 +1,45 @@
+.matches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.match {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 2rem); /* Hasta 4 por fila */
+    box-sizing: border-box;
+    max-width: calc(25% - 2rem);
+}
+
+.match h2 {
+    text-align: center;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+}
+
+.team img {
+    max-width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

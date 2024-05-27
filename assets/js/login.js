@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         else if(usuario === 'admin' && contraseña === 'root') 
         {
             // Si son correctos redirigira a la pagina indicada
-            window.location.href = '../web/datos.html';
+            window.location.href = '../web/results.html';
             console.log('Exito.', username);
             return;
         }
