@@ -1,126 +1,130 @@
+/* Estilos generales del cuerpo */
 body {
-    font-family: Ubuntu;
+    font-family: Ubuntu; /* Fuente Ubuntu */
 }
 
-/*For aligning items to the center by displaying it as a Flex */
+/* Para alinear elementos al centro utilizando Flex */
 .align-center {
     display: flex;
-    justify-content: center;
-}
-  
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: #303030da;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    border-radius: 0.3rem;
-    max-width: 26.1%;
-}
-    
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: white;
-    font-family: Ubuntu;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-    
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #0f6fdd;
-}
-    
-/* Add an active class to highlight the current page */
-.topnav a.active {
-    background-color: #0f6fdd;
-    font-family: Ubuntu-Bold;
-}
-    
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
+    justify-content: center; /* Alineación centrada */
 }
 
+/* Añadir un fondo negro a la barra de navegación superior */
+.topnav {
+    background-color: #303030da; /* Color de fondo negro con transparencia */
+    overflow: hidden; /* Ocultar contenido desbordante */
+    margin-bottom: 1rem; /* Margen inferior de 1 rem */
+    border-radius: 0.3rem; /* Bordes redondeados */
+    max-width: 26.1%; /* Ancho máximo de 26.1% */
+}
+
+/* Estilo para los enlaces dentro de la barra de navegación */
+.topnav a {
+    float: left; /* Flotar a la izquierda */
+    color: white; /* Color del texto blanco */
+    font-family: Ubuntu; /* Fuente Ubuntu */
+    display: block; /* Mostrar como bloque */
+    text-align: center; /* Alineación centrada del texto */
+    padding: 14px 16px; /* Relleno de 14px arriba y abajo, 16px a los lados */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 17px; /* Tamaño de fuente de 17px */
+}
+
+/* Cambiar el color de los enlaces al pasar el cursor */
+.topnav a:hover {
+    background-color: #0f6fdd; /* Fondo azul */
+}
+
+/* Añadir una clase activa para resaltar la página actual */
+.topnav a.active {
+    background-color: #0f6fdd; /* Fondo azul */
+    font-family: Ubuntu-Bold; /* Fuente Ubuntu en negrita */
+}
+
+/* Ocultar el enlace que abre y cierra la barra de navegación en pantallas pequeñas */
+.topnav .icon {
+    display: none; /* No mostrar */
+}
+
+/* Estilos para botones */
 .btn {
-    background: #303030da;
-    border-radius: 0.3rem;
-    display: flex;
-    color: white;
-    text-decoration: none;
-    padding: 0.6rem;
-    font-family: Ubuntu;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
+    background: #303030da; /* Fondo negro con transparencia */
+    border-radius: 0.3rem; /* Bordes redondeados */
+    display: flex; /* Mostrar como flex */
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    padding: 0.6rem; /* Relleno de 0.6 rem */
+    font-family: Ubuntu; /* Fuente Ubuntu */
+    cursor: pointer; /* Cursor de mano */
+    border: none; /* Sin borde */
 
     &:hover {
-        background: #0f6fdd;
+        background: #0f6fdd; /* Fondo azul al pasar el cursor */
     }
 
     &.-modal {
-        text-align: center;
-        border: none;
-        margin-left: 14rem;
-        padding: 0.5rem 3rem;
-        margin-top: 3rem;
+        text-align: center; /* Texto centrado */
+        border: none; /* Sin borde */
+        margin-left: 14rem; /* Margen izquierdo de 14 rem */
+        padding: 0.5rem 3rem; /* Relleno arriba y abajo de 0.5 rem, a los lados de 3 rem */
+        margin-top: 3rem; /* Margen superior de 3 rem */
     }
 
     &.login {
-        text-align: center;
-        border: none;
-        padding: 0.5rem 3rem;
+        text-align: center; /* Texto centrado */
+        border: none; /* Sin borde */
+        padding: 0.5rem 3rem; /* Relleno arriba y abajo de 0.5 rem, a los lados de 3 rem */
     }
 
     &.go-back {
-        width: 20px;
-        height: 20px;
-        justify-content: center;
-        font-weight: bold;
-        position: absolute;
+        width: 20px; /* Ancho de 20px */
+        height: 20px; /* Altura de 20px */
+        justify-content: center; /* Alineación centrada */
+        font-weight: bold; /* Texto en negrita */
+        position: absolute; /* Posición absoluta */
     }
 }
 
+/* Clase de utilidad para añadir padding */
 .psb-1 {
-    padding: 0 0 1rem;
+    padding: 0 0 1rem; /* Relleno inferior de 1 rem */
 }
 
 /* Estilos para la ventana modal */
 .modal {
-    display: none;
+    display: none; /* No mostrar por defecto */
     position: fixed; /* Fijado a la pantalla */
     z-index: 1; /* Por encima de otros elementos */
-    left: 0;
-    top: 0;
+    left: 0; /* Posición izquierda 0 */
+    top: 0; /* Posición superior 0 */
     width: 100%; /* Ancho completo */
     height: 100%; /* Alto completo */
     overflow: auto; /* Scroll si es necesario */
-    background-color: rgba(0,0,0,0.4); /* Transparencia */
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo negro con transparencia */
 }
 
+/* Contenido de la ventana modal */
 .modal-contenido {
     text-align: center; /* Texto centrado */
-    background-color: #fefefe; /* Color de fondo */
-    border-radius: 1.2em; /* Redondeado */
+    background-color: #fefefe; /* Color de fondo blanco */
+    border-radius: 1.2em; /* Bordes redondeados */
     margin: 15% auto; /* 15% desde la parte superior y centrado */
-    padding: 20px;
-    border: 2px solid #0000002f;
-    width: 30%; /* Ancho de la ventana modal */
+    padding: 20px; /* Relleno de 20px */
+    border: 2px solid #0000002f; /* Borde gris claro */
+    width: 30%; /* Ancho de la ventana modal del 30% */
 }
 
+/* Botón de cerrar la ventana modal */
 .close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #aaa; /* Color gris */
+    float: right; /* Flotar a la derecha */
+    font-size: 28px; /* Tamaño de fuente de 28px */
+    font-weight: bold; /* Texto en negrita */
 }
 
 .close-btn:hover,
 .close-btn:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Color negro al pasar el cursor o enfocar */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cursor de mano */
 }

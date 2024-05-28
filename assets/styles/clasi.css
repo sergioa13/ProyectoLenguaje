@@ -1,47 +1,51 @@
-/* General styling for classification and player stats sections */
+/* Estilos Generales */
 .classification, .player-stats {
-    margin-top: 2rem;
+    margin-top: 2rem; /* Margen superior de 2 rem */
 }
 
 .classification h2, .player-stats h2 {
-    text-align: center;
-    margin-bottom: 1rem;
+    text-align: center; /* Alineación centrada del texto */
+    margin-bottom: 1rem; /* Margen inferior de 1 rem */
 }
 
-/* Styling for all tables */
+/* Estilos de Tablas */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2rem;
-    border-radius: 8px; /* Añadido para bordes redondeados */
-    overflow: hidden; /* Añadido para evitar desbordamiento */
+    width: 100%; /* Ancho del 100% del contenedor */
+    border-collapse: collapse; /* Colapsar bordes de las celdas */
+    margin-bottom: 2rem; /* Margen inferior de 2 rem */
+    border-radius: 8px; /* Bordes redondeados con un radio de 8 píxeles */
+    overflow: hidden; /* Ocultar contenido desbordante */
 }
 
 thead {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Color de fondo gris oscuro */
+    color: white; /* Color del texto blanco */
 }
 
 th, td {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    text-align: center;
+    padding: 0.5rem; /* Relleno de 0.5 rem en las celdas */
+    border: 1px solid #ccc; /* Borde de 1 píxel sólido y gris claro */
+    text-align: center; /* Alineación centrada del texto */
 }
 
-/* Specific styling for player stats tables */
-.team-stats-container {
+/* Estilos Específicos para las Tablas de Estadísticas de Jugadores */
+.contenedor-team-stats {
     text-align: center; /* Centra los elementos horizontalmente */
 }
 
-.team-stats {
-    background-color: white;
-    border: 1px solid #ccc;
-    margin: 1rem auto; /* Centra horizontalmente */
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Cambiado de flex a inline-block */
-    width: calc(25% - 2rem); /* Hasta 4 por fila */
-    box-sizing: border-box;
-    vertical-align: top; /* Alinea las tablas en la parte superior */
+/* Estilo para el botón de filtro */
+#teamFilter {
+    padding: 8px 16px; /* Relleno de 8px arriba y abajo, 16px a los lados */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    border: 1px solid; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados de 20px */
+    background-color: #fff; /* Color de fondo blanco */
+    color: #333; /* Color del texto gris oscuro */
+    cursor: pointer; /* Cursor de mano */
+    outline: none; /* Elimina el contorno al hacer clic */
+}
+
+/* Cambiar el color de fondo del botón al pasar el cursor */
+#teamFilter:hover {
+    background-color: #f0f0f0; /* Fondo gris claro al pasar el cursor */
 }

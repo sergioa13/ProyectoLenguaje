@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../assets/styles/slider.css">
         <link rel="stylesheet" href="../assets/styles/webfonts.css">
         <link rel="stylesheet" href="../assets/styles/main.css">
+
     </head>
     <body>
         <div align="center">
@@ -71,8 +72,18 @@
             </table>
         </div>
 
+
+
         <div class="player-stats">
             <h2>Estadísticas de Jugadores</h2>
+            <div>
+                <select id="teamFilter">
+                    <option value="all">Todos los equipos</option>
+                    <option value="Baloncesto Serracines">Baloncesto Serracines</option>
+                    <option value="HA Basket">HA Basket</option>
+                    <option value="Valcude Alcobendas B">Valcude Alcobendas B</option>
+                </select>
+            </div>
             <div class="team-stats">
                 <h3>Baloncesto Serracines</h3>
                 <table>
@@ -248,7 +259,7 @@
                 </table>
             </div>
             <div class="team-stats">
-                <h3>Valcude Alcobendas "B"</h3>
+                <h3>Valcude Alcobendas B</h3>
                 <table>
                     <thead>
                         <tr>
@@ -348,5 +359,6 @@
                     </tbody>
                 </table>
             </div>
+            <script src="../assets/js/filter.js"></script>
     </body>
 </html>

@@ -1,25 +1,27 @@
+/* Estilos para los enlaces */
 a {
-    text-decoration: none;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
+/* Estilos para los campos de entrada */
 input {
-    background: #686868;
-    border: solid 0.15rem rgb(89 89 89);
-    padding: 0.5rem;
-    font-weight: bold;
-    border-radius: 0.3rem;
-    color: white;
+    background: #686868; /* Color de fondo gris oscuro */
+    border: solid 0.15rem rgb(89, 89, 89); /* Borde sólido de 0.15 rem de color gris */
+    padding: 0.5rem; /* Relleno de 0.5 rem */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 0.3rem; /* Bordes redondeados con un radio de 0.3 rem */
+    color: white; /* Color del texto blanco */
 
     &:hover {
-        border: solid 0.15rem #0f6fdd;
+        border: solid 0.15rem #0f6fdd; /* Borde azul al pasar el cursor */
     }
 
     &:focus {
-        border: solid 0.15rem #0f6fdd;
-        outline: none;
+        border: solid 0.15rem #0f6fdd; /* Borde azul al enfocar */
+        outline: none; /* Quita el contorno por defecto */
     }
 
     &::placeholder {
-        color:    rgb(68, 68, 68);
-     }
+        color: rgb(68, 68, 68); /* Color del texto del placeholder */
+    }
 }

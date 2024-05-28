@@ -1,45 +1,52 @@
+/* Contenedor de los partidos */
 .matches {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex; /* Utiliza flexbox para la disposición */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Alinea los elementos al centro */
 }
 
+/* Estilo individual de cada partido */
 .match {
-    background-color: white;
-    border: 1px solid #ccc;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(25% - 2rem); /* Hasta 4 por fila */
-    box-sizing: border-box;
-    max-width: calc(25% - 2rem);
+    background-color: white; /* Color de fondo blanco */
+    border: 1px solid #ccc; /* Borde sólido de 1 píxel de color gris claro */
+    margin: 1rem; /* Margen de 1 rem */
+    padding: 1rem; /* Relleno de 1 rem */
+    border-radius: 8px; /* Bordes redondeados con un radio de 8 píxeles */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    flex: 1 1 calc(25% - 2rem); /* Hasta 4 por fila, con tamaño flexible */
+    box-sizing: border-box; /* Incluye relleno y borde en el ancho total */
+    max-width: calc(25% - 2rem); /* Ancho máximo del 25% menos 2 rem */
 }
 
+/* Estilo para los encabezados dentro de cada partido */
 .match h2 {
-    text-align: center;
+    text-align: center; /* Alineación centrada del texto */
 }
 
+/* Contenedor para los equipos dentro de cada partido */
 .teams {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
+    display: flex; /* Utiliza flexbox para la disposición */
+    justify-content: space-between; /* Espacio entre los equipos */
+    align-items: center; /* Alinea los elementos al centro verticalmente */
+    margin-top: 1rem; /* Margen superior de 1 rem */
 }
 
+/* Estilo individual de cada equipo */
 .team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: small;
+    display: flex; /* Utiliza flexbox para la disposición */
+    flex-direction: column; /* Dispone los elementos en columna */
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    font-size: small; /* Tamaño de fuente pequeño */
 }
 
+/* Estilo para las imágenes dentro de cada equipo */
 .team img {
-    max-width: 50px;
-    margin-bottom: 0.5rem;
+    max-width: 50px; /* Ancho máximo de 50 píxeles */
+    margin-bottom: 0.5rem; /* Margen inferior de 0.5 rem */
 }
 
+/* Estilo para la puntuación */
 .score {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.5rem; /* Tamaño de fuente de 1.5 rem */
+    font-weight: bold; /* Texto en negrita */
 }

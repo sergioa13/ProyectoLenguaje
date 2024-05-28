@@ -1,10 +1,6 @@
-/* This is out index web's stylesheet (index.css), here u will have a little 
-explanation about what we're doing in our code for each style tag */
-
-/* To enforce a suitable image height and width for our video on the slider  */
 .dive-video {
-  width: 900px;
-  height: 600px;
-  max-width: 900px;
-  max-height: 600px;
+  width: 900px; /* Ancho fijo de 900 píxeles */
+  height: 600px; /* Altura fija de 600 píxeles */
+  max-width: 900px; /* Ancho máximo de 900 píxeles */
+  max-height: 600px; /* Altura máxima de 600 píxeles */
 }

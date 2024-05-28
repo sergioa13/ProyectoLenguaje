@@ -1,31 +1,31 @@
-/* All the Fonts we'll be using for this web project */
+/* Todas las fuentes que usaremos para este proyecto web */
 
 @font-face {
-    font-family: "Ubuntu";
-    src: url(../webfonts/Ubuntu.ttf) format("truetype");
+    font-family: "Ubuntu"; /* Nombre de la fuente */
+    src: url(../webfonts/Ubuntu.ttf) format("truetype"); /* Ruta a la fuente y formato */
 }
 
 @font-face {
-    font-family: "Ubuntu-Bold";
-    src: url(../webfonts/Ubuntu-b.ttf) format("truetype");
-    font-weight: bold;
+    font-family: "Ubuntu-Bold"; /* Nombre de la fuente en negrita */
+    src: url(../webfonts/Ubuntu-b.ttf) format("truetype"); /* Ruta a la fuente en negrita y formato */
+    font-weight: bold; /* Peso de la fuente */
 }
 
 @font-face {
-    font-family: "Ubuntu-Compressed";
-    src: url(../webfonts/Ubuntu-C.ttf) format("truetype");
-    font-style: oblique;
+    font-family: "Ubuntu-Compressed"; /* Nombre de la fuente comprimida */
+    src: url(../webfonts/Ubuntu-C.ttf) format("truetype"); /* Ruta a la fuente comprimida y formato */
+    font-style: oblique; /* Estilo de la fuente */
 }
 
 @font-face {
-    font-family: "Ubuntu-Italics";
-    src: url(../webfonts/Ubuntu-i.ttf) format("truetype");
-    font-style: italic;
+    font-family: "Ubuntu-Italics"; /* Nombre de la fuente en cursiva */
+    src: url(../webfonts/Ubuntu-i.ttf) format("truetype"); /* Ruta a la fuente en cursiva y formato */
+    font-style: italic; /* Estilo de la fuente */
 }
 
 @font-face {
-    font-family: "Ubuntu-Italics-Bold";
-    src: url(../webfonts/Ubuntu-ib.ttf) format("truetype");
-    font-weight: bold;
-    font-style: italic;
+    font-family: "Ubuntu-Italics-Bold"; /* Nombre de la fuente en cursiva y negrita */
+    src: url(../webfonts/Ubuntu-ib.ttf) format("truetype"); /* Ruta a la fuente en cursiva y negrita y formato */
+    font-weight: bold; /* Peso de la fuente */
+    font-style: italic; /* Estilo de la fuente */
 }
